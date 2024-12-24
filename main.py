@@ -1,7 +1,7 @@
 import re
 import requests
 
-repo_name="test-repo1"
+repo_name="cleaned-feeds-i"
 
 # 複数のRSSフィードURLをリストとして定義
 FEED_URLS = [
