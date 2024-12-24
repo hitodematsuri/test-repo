@@ -16,7 +16,7 @@ def remove_unwanted_tags_from_text(text, output_filename):
     text = re.sub(r'<a [^>]*href="[^"]*(amazon|amzn)[^"]*"[^>]*>.*?</a>', '', text)
 
     # <link rel="hub" href="http://pubsubhubbub.appspot.com"/> を削除
-    text = re.sub(r'<link rel="hub" href="http://pubsubhubbub.appspot.com"/>', '', text)
+    text = re.sub(r'<link\s+rel="hub"\s+href="http://pubsubhubbub.appspot.com"\s*/>', '', text)
     
     # <link rel="self" href="***" /> を新しいURLに書き換え
     new_link = f'<link rel="self" href="https://hitodematsuri.github.io/{repo_name}/{output_filename}" />'
