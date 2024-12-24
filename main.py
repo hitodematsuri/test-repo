@@ -1,7 +1,7 @@
 import re
 import requests
 
-repo_name="test-repo"
+repo_name="test-repo1"
 
 # 複数のRSSフィードURLをリストとして定義
 FEED_URLS = [
